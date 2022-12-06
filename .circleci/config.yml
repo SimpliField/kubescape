@@ -1,0 +1,11 @@
+version: 2.1
+
+orbs:
+  build-tools: simplifield/build-tools@dev:9674b36
+
+workflows:
+  build:
+    jobs:
+      - build-tools/build_push:
+          context:
+            - docker-registry
